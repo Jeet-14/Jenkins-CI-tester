@@ -6,14 +6,14 @@ timeout(time: 30, unit: 'MINUTES') {
                 sh '''
                  whoami
                  echo $SHELL
-                 docker compose version 
+                 docker-compose version 
                 '''
             }
             stage('checking shell bash') {
                 sh '''#!/bin/bash
                  whoami
                  echo $SHELL
-                 docker compose version 
+                 docker-compose version 
                 '''
             }
         }
